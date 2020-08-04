@@ -1,8 +1,8 @@
-module EjemploSpring1 {
+module Spring1 {
+	exports IoC;
 	requires spring.core;
 	requires spring.context;
 	requires spring.beans;
 	requires java.desktop;
-	requires java.base;
-	exports IoC;
+	requires java.base;	
 }
