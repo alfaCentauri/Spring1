@@ -5,13 +5,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class UsoEmpleados {
 
 	public static void main(String[] args) {
-		/*Empleados empleado1 = new JefeEmpleado();
+		/*Empleados empleado1 = new JefeEmpleado(null);
 		System.out.println(empleado1.getTareas());
 		Empleados empleado2 = new SecretarioEmpleado();
 		System.out.println(empleado2.getTareas());
-		Empleados empleado3 = new DirectorEmpleado();
-		System.out.println(empleado3.getTareas());*/
-		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContext.xml");
+		Empleados empleado3 = new DirectorEmpleado(null);
+		System.out.println(empleado3.getTareas()); */
+		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContext.xml"); //Uso del archivo de configuración
 		DirectorEmpleado Juan = contexto.getBean("miEmpleado", DirectorEmpleado.class);
 		System.out.println(Juan.getTareas());
 		System.out.println(Juan.getInforme());
