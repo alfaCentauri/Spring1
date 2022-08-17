@@ -12,6 +12,7 @@
 	<bean id="miInforme" class="IoC.Informe" ></bean>
 	
 	<!-- Inyectando dependencias por un metodo setter -->
+	<!-- Scope se utiliza para indicar el patron de diseño -->
 	<bean id="miSecretarioEmpleado" class="IoC.SecretarioEmpleado" scope="prototype">
 		<property name="informeNuevo" ref="miInforme"></property>
 		<property name="email" value="contacto@sucreIT.com.ve"></property>
